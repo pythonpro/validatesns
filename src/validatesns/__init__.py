@@ -155,7 +155,7 @@ class SignatureValidator(object):
             certificate = certificate.encode()
 
         if isinstance(content, six.text_type):
-            content = content.encode()
+            content = content.encode("utf-8")
 
         try:
             oscrypto.asymmetric.rsa_pkcs1v15_verify(
