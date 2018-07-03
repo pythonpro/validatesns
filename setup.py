@@ -25,7 +25,7 @@ setup(
     ],
     tests_require=[
         "mock",
-        "oscrypto",
+        "oscrypto==0.16.0",
         "six"
     ],
     classifiers=[
